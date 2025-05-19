@@ -75,6 +75,12 @@ img {
     color: #EDE4FF;
 }
 
+#quote-pic {
+    border: none;
+    border-radius: 0;
+    pos: -1;
+}
+
 #two {
     background-color: #48556A;
     color: #E7EAEE;
