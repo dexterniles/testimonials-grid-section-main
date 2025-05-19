@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Barlow-Thin";
+    src: url(font/Barlow_Semi_Condensed/BarlowSemiCondensed-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Barlow-Semi-Bold";
+    src: url(font/Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F5F6;
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "box-1 box-1 box-2 box-5" "box-3 box-4 box-4 box-5";
+    gap: 32px;
+    max-width: 1336px;
+    padding: 8rem;
+}
+
+@media (max-width: 1024px) {
+    #wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "box-1 box-1" "box-2 box-3" "box-4 box-4" "box-5 box-5";
+        max-width: 647px;
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: "box-1" "box-2" "box-3" "box-4" "box-5";
+        max-width: 305px;
+        padding: 2rem 1rem;
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+}
+
+#flex {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+img {
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    border: 2px solid #A775F1;
+}
+
+#one {
+    background-color: #733FC8;
+    color: #EDE4FF;
+}
+
+#two {
+    background-color: #48556A;
+    color: #E7EAEE;
+}
+
+#three {
+    background-color: white;
+    color: #48556A;
+}
+
+#four {
+    background-color: #19202D;
+    color: #CFCFCF;
+}
+
+#five {
+    background-color: white;
+    color: #48556A;
+
+}
+
+#name {
+    font-family: "Barlow-Thin";
+    font-size: 13px;
+    line-height: 110%;
+}
+
+#verified {
+    font-family: "Barlow-Thin";
+    font-size: 11px;
+    line-height: 110%;
+}
+
+#quote-a {
+    font-family: "Barlow-Semi-Bold";
+    font-size: 20px;
+    line-height: 120%;
+}
+
+#quote-b {
+    font-family: "Barlow-Thin";
+    font-size: 13px;
+    line-height: 140%;
+}
